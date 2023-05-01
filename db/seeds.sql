@@ -1,7 +1,7 @@
 USE movies_db;
 
 INSERT INTO
-    netflix (movie_name)
+    netflixs (movie_name)
 VALUES ("The Pilot"), ("The gummy"), ("The flufffy pillow"), ("The hangover"), ("The christmas bell");
 
 INSERT INTO

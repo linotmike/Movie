@@ -5,7 +5,7 @@ DROP DATABASE IF EXISTS movies_db;
 CREATE DATABASE movies_db;
 USE movies_db;
 
-CREATE TABLE netflix(
+CREATE TABLE netflixs(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     movie_name VARCHAR(100) NOT NULL
 );
@@ -15,6 +15,6 @@ CREATE TABLE reviews(
     review TEXT NOT NULL,
     netflix_id INT NOT NULL,
     FOREIGN KEY (netflix_id) 
-    REFERENCES netflix(id)
+    REFERENCES netflixs(id)
     ON DELETE CASCADE
 );
